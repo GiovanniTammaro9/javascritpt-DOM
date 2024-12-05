@@ -29,3 +29,21 @@ function aggiungiBottone() {
     let paragrafo = document.getElementById("paragrafo");
     paragrafo.innerHTML = paragrafo.innerHTML + `<button onclick="alert(\`hai cliccato il nuovo bottone!\`)">nuovoo bottone</button>`;
 }
+
+//creare una lista con createElement
+function creaLista() {
+    let lista = document.createElement("ul");
+    let item1 = document.createElement("li");
+    item1.innerText = "elemento1";
+    lista.appendChild(item1);
+
+    let item2 = document.createElement("li");
+    item2.innerText = "elemento2";
+    lista.appendChild(item2);
+
+    let item3 = document.createElement("li");
+    item3.innerText = "elemento3";
+    lista.appendChild(item3);
+
+    document.body.appendChild(lista);
+}
