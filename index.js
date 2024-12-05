@@ -17,3 +17,9 @@ document.body.appendChild(paragrafo);
 function modificaTesto() {
     paragrafo.innerText = "il testo del paragrafo è stato modificato";
 }
+//modifica stile 
+function modificaStile() {
+    let paragrafo = document.getElementById("paragrafo");
+    paragrafo.style.backgroundColor = "#4CAF50";
+    paragrafo.style.fontSize = "20px";
+}
