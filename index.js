@@ -23,3 +23,9 @@ function modificaStile() {
     paragrafo.style.backgroundColor = "#4CAF50";
     paragrafo.style.fontSize = "20px";
 }
+
+//aggiungere bottone in elemento html
+function aggiungiBottone() {
+    let paragrafo = document.getElementById("paragrafo");
+    paragrafo.innerHTML = paragrafo.innerHTML + `<button onclick="alert(\`hai cliccato il nuovo bottone!\`)">nuovoo bottone</button>`;
+}
