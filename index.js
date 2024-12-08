@@ -47,3 +47,17 @@ function creaLista() {
 
     document.body.appendChild(lista);
 }
+
+//form
+function validateForm(event) {
+    event.preventDeafault();
+
+    let nome = document.getElementById("nome").value;
+    let cognome = document.getElementById("cognome").value;
+    
+    if(nome === "" || cognome === "") {
+        alert("per favore, compila tutti i campi");
+    }else {
+        document.getElementById("myForm").submit();
+    }
+}
